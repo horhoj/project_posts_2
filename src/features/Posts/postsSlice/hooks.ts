@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useAppDispatch } from '../../../store/hooks';
 import { postsSlice } from './index';
 
-export const usePostListForm = (): void => {
+export const usePostListPage = (): void => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -15,7 +15,7 @@ interface UsePostItemFormReturnType {
   id: number;
 }
 
-export const usePostItemForm = (): UsePostItemFormReturnType => {
+export const usePostItemPage = (): UsePostItemFormReturnType => {
   const dispatch = useAppDispatch();
 
   const { id } = useParams<{ id: string }>();

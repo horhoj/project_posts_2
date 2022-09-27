@@ -8,7 +8,7 @@ import styles from './PostListPage.module.scss';
 import { PostItem } from './PostItem';
 
 export const PostListPage: FC = () => {
-  postsSlice.hooks.usePostListForm();
+  postsSlice.hooks.usePostListPage();
 
   const dispatch = useAppDispatch();
   const fetchPostListRequest = useAppSelector(

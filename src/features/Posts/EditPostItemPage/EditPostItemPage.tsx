@@ -14,7 +14,7 @@ const getInitialValues = (post: Post): PostItemEditData => ({
 });
 
 export const EditPostItemPage: FC = () => {
-  const { id } = postsSlice.hooks.usePostItemForm();
+  const { id } = postsSlice.hooks.usePostItemPage();
 
   const dispatch = useAppDispatch();
 
